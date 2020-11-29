@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer type="module"></script>
+  </head>
+
+  <body>
+    <div class="form-input">
+      <form id="formInput">
+        <h1>Table Control</h1>
+        <span class="titre">Dimension de la grille:</span>
+        <div>
+          <span>x: </span>
+          <input 
+          type="number" 
+          name="axeX" 
+          required="required"
+          id="axeX">
+        </div>
+        <div >
+          <span>y: </span>
+          <input 
+          type="number" 
+          name="axeY" 
+          required="required" 
+          id="axeY">
+        </div>
+        <span class="titre">Position initiale de l'aspirateur:</span>
+        <div >
+          <span>x: </span>
+          <input 
+          type="number" 
+          name="xAspi" 
+          required="required" 
+          id="xAspi">
+        </div>
+        <div >
+          <span>y: </span>
+          <input 
+          type="number" 
+          name="yAspi" 
+          required="required" 
+          id="yAspi">
+        </div>
+        <div >
+          <span>Orientation: </span>
+          <input 
+          type="text" 
+          name="ori" 
+          required="required" 
+          id="ori"
+          list="orientation">
+          <datalist id="orientation">
+            <option value="N"></option>
+            <option value="E"></option>
+            <option value="S"></option>
+            <option value="W"></option>
+          </datalist>
+        </div>
+        <span class="titre">Instructions:</span>
+        <div>
+          <input 
+          type="text" 
+          name="ins" 
+          required="required" 
+          id="ins">
+        </div>
+        <div>
+          <input 
+          type="submit" 
+          value="Run" 
+          name="submit" 
+          id="submit">
+        </div>
+      </form>
+    </div>
+    <div id="game-board"></div>
+  </body>
+</html>
