@@ -75,6 +75,10 @@ form div input{
      height: 20px;
 }
 
+form div input#ori{
+     text-transform: uppercase;
+}
+
 form div input#submit{
      height: 30px;
      width: 100px;
